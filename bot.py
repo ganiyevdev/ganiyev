@@ -18,10 +18,9 @@ client.password_callback = get_2fa_password
 
 # 🧠 MalakGPTga so‘rov yuborish funksiyasi
 def ask_malak_gpt(query):
-    url = "https://vibexe.uz/API/AI/index.php"
+    url = "https://s1365.surkhandc.uz/ai/"
     data = {
-        "query": query,
-        "version": "vibexe-2.1"
+        "query": query
     }
     headers = {
         "Content-Type": "application/json"
