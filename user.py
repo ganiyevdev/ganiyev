@@ -35,7 +35,7 @@ def ask_malak_gpt(query):
         if response.status_code == 200:
             print("📨 API javobi:", response.text)  # Debug uchun
             result = response.json()
-            return result.get("answer", "❗ Javob topilmadi.")
+            return result.get("response", "❗ Javob topilmadi.")  # <-- to‘g‘ri kalit nomi
         else:
             return f"❌ HTTP xato: {response.status_code}"
     except Exception as e:
