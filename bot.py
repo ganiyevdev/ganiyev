@@ -41,7 +41,7 @@ def ask_malak_gpt(query):
 @client.on(events.NewMessage(pattern=r'^\.ai (.+)'))
 async def handler(event):
     query = event.pattern_match.group(1)
-    await event.reply("🧠 MalakGPTga yuborilmoqda...")
+    await event.reply("🧠 MalakGgTga yuborilmoqda...")
     response = ask_malak_gpt(query)
     await event.respond(response)
 
